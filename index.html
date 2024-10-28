@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .bg-container {
+            background-color: antiquewhite;
+            height: 100vh;
+            background-size: cover;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 col-sm-12">
+
+                <div class="d-flex flex-column justify-content-center bg-container" id="containers">
+                    <div class="text-center ">
+                        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 20px;" id="reddy">
+                            COLOR
+                            SELECTOR</h1>
+                        <div>
+                            <button class="p-2" style="background-color: red; " onclick="red()">$$RED$$</button>
+                            <button class="p-2" style="background-color: green;" onclick="green()">$GREEN$</button>
+
+                            <button class="p-2" style="background-color: orange;" onclick="orange()">ORANGE</button>
+                            <button class="p-2" style="background-color: pink;" onclick="pink()">$$PINK$$</button>
+                        </div>
+                        <p id="snone" style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 20px;">
+                            Color
+                            Name: None</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-lg-6 col-sm-12">
+                <div class="d-flex flex-column justify-content-center bg-container"
+                    id="containerss">
+                    <h1 class="text-center" style="padding: 20px; font-family: Georgia, 'Times New Roman', Times, serif;"" id="reddys">IMAGE SELECTOR</h1>
+                    <div class="text-center">
+                        <button onclick="a()" class="p-2" style="background-color: red; ">$$RED$$</button>
+                        <button class="p-2" style="background-color: green;" onclick="b()">$GREEN$</button>
+
+                        <button class="p-2" style="background-color: orange;" onclick="c()">ORANGE</button>
+                        <button class="p-2" style="background-color: pink;" onclick="d()">$$PINK$$</button>
+                    </div>
+                    <p id="snones" style="font-family: Georgia, 'Times New Roman', Times, serif; padding: 20px;"
+                        class="text-center">Color
+                        Name: None</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        let redE1 = document.getElementById("reddy")
+        // let greenE1 = doctment.getElementById("green")
+        // let orangeE1 = doctment.getElementById("orange")
+        // let pinkE1 = doctment.getElementById("pink")
+        let containerE1 = document.getElementById("containers")
+        let noneE1 = document.getElementById("snone")
+        let containerE2 = document.getElementById("containerss")
+        let noneE2 = document.getElementById("snones")
+        let redE2 = document.getElementById("reddys")
+
+        function red() {
+            containerE1.style.backgroundColor = "red"
+            console.log("button Working")
+            noneE1.textContent = "Color Name:RED"
+            noneE1.style.color = "white"
+            redE1.style.color = "white"
+
+
+        }
+        function green() {
+            containerE1.style.backgroundColor = "green"
+            noneE1.textContent = "Color Name:GREEN"
+            noneE1.style.color = "black"
+            redE1.style.color = "black"
+        }
+        function orange() {
+            containerE1.style.backgroundColor = "orange"
+            noneE1.textContent = "Color Name:ORANGE"
+            noneE1.style.color = "black"
+            redE1.style.color = "black"
+        }
+        function pink() {
+            containerE1.style.backgroundColor = "pink"
+            noneE1.textContent = "Color Name:PINK"
+            noneE1.style.color = "black"
+            redE1.style.color = "black"
+        }
+        function a() {
+            containerE2.style.backgroundImage = "url('https://d2bzx2vuetkzse.cloudfront.net/fit-in/0x700/outfits/5d96e608-b64f-4953-8a37-4545cd0baa46.png')"
+            noneE2.textContent = "Color Name:RED"
+            noneE2.style.color = "white"
+            redE2.style.color = "white"
+        }
+        function b() {
+            containerE2.style.backgroundImage = "url('https://wallpapers.com/images/featured/lime-green-aesthetic-background-424k42ibgc9akg2r.jpg')"
+            noneE2.textContent = "Color Name:GREEN"
+            noneE2.style.color = "white"
+            redE2.style.color = "white"
+        }
+        function c() {
+            containerE2.style.backgroundImage = "url('https://i.redd.it/orange-aesthetic-wallpapers-v0-j31u61nhqepa1.jpg?width=720&format=pjpg&auto=webp&s=9feb77771006ad12c9d016144137e007a19f1438')"
+            noneE2.textContent = "Color Name:ORANGE"
+            noneE2.style.color = "black"
+            redE2.style.color = "black"
+        }
+        function d() {
+            containerE2.style.backgroundImage = "url('https://i.pinimg.com/736x/36/46/79/364679bc5fbb135a113956bd891b873e.jpg')"
+            noneE2.textContent = "Color Name:PINK"
+            noneE2.style.color = "white"
+            redE2.style.color = "white"
+        }
+
+
+
+    </script>
+</body>
+
+</html>
